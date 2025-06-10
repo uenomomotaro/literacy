@@ -1,0 +1,49 @@
+/* style-home.css */
+
+/* カラーテーマ */
+:root {
+    --baystars-blue: #002D62;  /* ベイスターズブルー */
+    --baystars-yellow: #FFC107; /* スターイエロー */
+    --baystars-white: #FFFFFF;   /* ホワイト */
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: var(--baystars-white); /* 背景は白 */
+    color: var(--baystars-blue);             /* 基本テキストは青 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: var(--baystars-blue);
+    color: var(--baystars-white);
+    padding: 1.5em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+}
+
+main .star {
+    color: var(--baystars-yellow); /* 星の色 */
+}
+
+footer {
+    background-color: var(--baystars-blue);
+    color: var(--baystars-white);
+    padding: 1em 0;
+    font-size: 0.9em;
+}
